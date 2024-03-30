@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Prisoner's Dilema!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Prisoner's Dilema!</h2>
+        <p>현재 점수: <span id="score">0</span>
+        <button id="cooperate">협력</button>
+        <button id="betray">배반</button>
+        <p style="margin-top:45px;">대곽 화이팅</p>
+        
+        <script>
+            var point=0
+            document.getElementById("cooperate").addEventListener('click',cooperatechoice);
+            document.getElementById("betray").addEventListener('click',betraychoice);
+            function cooperatechoice(){
+                point+=3    //아직 다 짜지 않음
+                alert(point);
+            }
+            function betraychoice(){
+                point-=1    //아직 다 짜지 않음
+                alert(point);
+            }
+        </script>
+    </body>
+</html>
